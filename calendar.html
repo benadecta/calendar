@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Calendar</title>
+    <link rel="stylesheet" href="cal.css">
+</head>
+<body>
+    <h1>College Calendar</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Sun</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php
+            $calendar = new Calendar();
+            echo $calendar->render();
+            ?>
+        </tbody>
+    </table>
+    <script src="calendar.js"></script>
+</body>
+</html>
